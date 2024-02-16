@@ -1,0 +1,7 @@
+{
+  "description": "Project package for fiddle-svg.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "private": true
+}

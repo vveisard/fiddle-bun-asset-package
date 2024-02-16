@@ -1,0 +1,27 @@
+{
+  "name": "content-official",
+  "type": "module",
+  "scripts": {
+    "generate": "bun ./scripts/generate.ts",
+    "build": "bun ./scripts/build.ts"
+  },
+  "exports": {
+    ".": {
+      "bun": {
+        "import": "./index.ts"
+      }
+    }
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.0",
+    "deepmerge-ts": "^5.1.0",
+    "lib-core": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tool-create-svg": "workspace:*"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
